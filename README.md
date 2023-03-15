@@ -22,3 +22,6 @@ The MainScreen also includes several other composable functions for displaying U
 
 ## Color scheme used in the application
 ![colorscheme](colorscheme.png)
+
+## How the application looks like
+![app](app.jpg)
