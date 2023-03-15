@@ -1,4 +1,4 @@
-package com.example.todo
+package com.example.dogagecalculator
 
 import org.junit.Test
 

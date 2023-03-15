@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">TODO</string>
+    <string name="app_name">Dog Age Calculator</string>
+    <string name="app_title">Calculate your dog\'s age in human years!</string>
+    <string name="result_text">Your dog\'s age in human years is:</string>
+    <string name="home">Home</string>
+    <string name="info">Info</string>
+    <string name="chart">Chart</string>
+    <string name="get_result">Get Result</string>
+    <string name="enter_dog_age">Enter dog\'s age</string>
+    <string name="fact_loading_text">Loading a random fact about dogs...</string>
+    <string name="select_dog_size">Select dog\'s size</string>
+    <string name="chart_description">Dog Age Chart</string>
+    <string name="chart_image_url">https://www.akc.org/wp-content/uploads/2015/11/Dog_Age_Chart_Proof_01Blue.jpg</string>
+    <string name="random_dog_fact">A random dog fact:</string>
+    <string name="developer_title">Developer</string>
+    <string name="developer_name">Nenna Hänninen DIN21SP</string>
+    <string name="course_title">Course</string>
+    <string name="course_name">Mobile Programming with Native Technologies ID00CS48-3002 (Spring 2023)</string>
+    <string name="about_title">About the app</string>
+    <string name="description_1">This mobile application helps you to determine how old your dog is in human years by using a simple calculation method provided by the American Kennel Club (AKC). Source:</string>
+    <string name="description_2">Additionally, the program provides a fun and educational element by retrieving a random dog fact from the animality API.</string>
+    <string name="description_1_link_text">Click this link to read the study.</string>
+    <string name="description_2_link_text">Click here to read the full documentation of the API.</string>
+    <string name="hyper_link_1">https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/</string>
+    <string name="hyper_link_2">https://animality.xyz/</string>
+    <string name="functionality_title">How does the calculation actually work?</string>
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_content">There is no universal rule for calculating your dog’s age since other factors such as breed also affect it, but you can get a close estimate by using this calculator.</string>
+    <string name="functionality_content_1">As a general guideline, though, the American Veterinary Medical Association breaks it down like this:</string>
+    <string name="functionality_content_2">15 human years equals the first year of a medium-sized dog’s life.</string>
+    <string name="functionality_content_3">Year two for a dog equals about nine years for a human.</string>
+    <string name="functionality_content_4">And after that, each human year would be approximately five years for a dog.</string>
 </resources>

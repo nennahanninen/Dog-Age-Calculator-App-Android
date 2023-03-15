@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "TODO"
+rootProject.name = "DogAgeCalculator"
 include ':app'
