@@ -26,7 +26,12 @@ The MainScreen also includes several other composable functions for displaying U
 ## How to get started
 1. Clone the repository to your local machine
 2. Build and run the application
+
 _! Make sure your device is connected to internet !_
 
-## How the home page of the application looks like
-![app](app.jpg)
+## How the main screens of the application look like
+![MainScreen](MainScreen.png)
+
+![InfoScreen](InfoScreen.png)
+
+![ChartScreen](ChartScreen.png)
