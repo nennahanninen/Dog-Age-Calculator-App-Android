@@ -8,6 +8,8 @@ Additionally, the program provides a fun and educational element by retrieving a
 
 Click **[here](https://animality.xyz/)** to read the full documentation of the API.
 
+_! No API key needed !_
+
 This code is an example of how to create a navigation-based app in Jetpack Compose, an Android UI toolkit for building native Android apps.
 
 The application defines a navigation graph with three composable screens ("Home," "Info," and "Chart"), each of which is associated with a specific route. The NavHost composable is used to set up this navigation graph, with the start destination set to "Home."
@@ -20,3 +22,11 @@ The MainScreen also includes several other composable functions for displaying U
 
 ## Color scheme used in the application
 ![colorscheme](colorscheme.png)
+
+## How to get started
+1. Clone the repository to your local machine
+2. Build and run the application
+_! Make sure your device is connected to internet !_
+
+## How the home page of the application looks like
+![app](app.jpg)
