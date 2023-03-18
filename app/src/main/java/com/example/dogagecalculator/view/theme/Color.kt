@@ -1,4 +1,4 @@
-package com.example.dogagecalculator.ui.theme
+package com.example.dogagecalculator.view.theme
 
 import androidx.compose.ui.graphics.Color
 

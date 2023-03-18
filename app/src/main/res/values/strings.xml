@@ -30,4 +30,13 @@
     <string name="functionality_content_2">15 human years equals the first year of a medium-sized dog’s life.</string>
     <string name="functionality_content_3">Year two for a dog equals about nine years for a human.</string>
     <string name="functionality_content_4">And after that, each human year would be approximately five years for a dog.</string>
+    <string name="info_icon_title">Information</string>
+    <string name="age_range_title">Age range:</string>
+    <string name="age_range">\"   - 1-16 years\"</string>
+    <string name="size_title">Size:</string>
+    <string name="size_range_small">\"   - Small: 20lbs/9kg or less\"</string>
+    <string name="size_range_medium">\"   - Medium: 20lbs/9kg - 50lbs/23kg\"</string>
+    <string name="size_range_large">\"   - Large: 50lbs/23kg - 100lbs/45kg\"</string>
+    <string name="size_range_giant">\"   - Giant: 100lbs/45kg or more\"</string>
+    <string name="info_close_button">Close</string>
 </resources>
