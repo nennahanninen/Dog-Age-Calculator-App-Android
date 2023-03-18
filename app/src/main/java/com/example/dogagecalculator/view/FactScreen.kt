@@ -1,8 +1,6 @@
 package com.example.dogagecalculator.view
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -19,27 +17,35 @@ import kotlinx.coroutines.withContext
 
 @Composable
 fun FactScreen() {
-    var fact by remember { mutableStateOf("") }
-    var isLoading by remember { mutableStateOf(true) }
+    val fact = remember { mutableStateOf("") }
+    val errorMessage = remember { mutableStateOf("") }
+    val isLoading = remember { mutableStateOf(true) }
 
-    LaunchedEffect(key1 = true) {
-        val factResponse = withContext(Dispatchers.IO) { FactApi.instance.getFact() }
-        fact = factResponse.fact
-        isLoading = false
-    }
-
-    Column(
-        verticalArrangement = Arrangement.spacedBy(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.padding(16.dp)) {
-        if (isLoading) {
-            CircularProgressIndicator()
-            Text(text = stringResource(R.string.fact_loading_text))
-        } else {
-            Text(
-                text = fact,
-                style = MaterialTheme.typography.body1, textAlign = TextAlign.Center
-            )
+    LaunchedEffect(Unit) {
+        try {
+            val factResponse = withContext(Dispatchers.IO) { FactApi.instance.getFact() }
+            fact.value = factResponse.fact
+        } catch (e: Exception) {
+            errorMessage.value = "CHECK YOUR INTERNET CONNECTION!\n ${e.message}"
+        } finally {
+            isLoading.value = false
         }
     }
+
+    if (isLoading.value) {
+        Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally, ) {
+            CircularProgressIndicator()
+            Text(text = stringResource(R.string.fact_loading_text))
+        }
+    } else if (errorMessage.value.isNotEmpty()) {
+        ErrorScreen(errorMessage.value)
+    } else {
+        FactDisplay(fact.value)
+    }
+}
+
+@Composable
+fun FactDisplay(fact: String) {
+    Text(text = fact, style = MaterialTheme.typography.body1, textAlign = TextAlign.Center)
 }
