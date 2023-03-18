@@ -20,14 +20,16 @@ The MainScreen composable is the main screen of the app and contains all the oth
 
 The MainScreen also includes several other composable functions for displaying UI components, such as AgeField, DogSizeList, and Calculation, which allow the user to enter their dog's age and size, select a size from a list of options, and perform a calculation based on the input values.
 
-## Color scheme used in the application
-![colorscheme](colorscheme.png)
+The application implements MVVM architecture and all the strings are saved under the resource file.
 
 ## How to get started
 1. Clone the repository to your local machine
 2. Build and run the application
 
 _! Make sure your device is connected to internet !_
+
+## Color scheme used in the application
+![colorscheme](colorscheme.png)
 
 ## How the main screens of the application look like
 ![MainScreen](MainScreen.png)
