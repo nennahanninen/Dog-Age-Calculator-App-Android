@@ -23,5 +23,10 @@ The MainScreen also includes several other composable functions for displaying U
 ## Color scheme used in the application
 ![colorscheme](colorscheme.png)
 
-## How the application looks like
+## How to get started
+1. Clone the repository to your local machine
+2. Build and run the application
+_! Make sure your device is connected to internet !_
+
+## How the home page of the application looks like
 ![app](app.jpg)
